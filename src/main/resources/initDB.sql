@@ -7,3 +7,4 @@ CREATE TABLE Person (
 
 INSERT INTO Person (username, birth_year, password) VALUES ('user1', 2000, 'password1');
 INSERT INTO Person (username, birth_year, password) VALUES ('user2', 1990, 'password2');
+INSERT INTO Person (username, birth_year, password) VALUES ('user3', 1995, '{noop}password3');
