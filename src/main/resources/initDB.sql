@@ -5,6 +5,9 @@ CREATE TABLE Person (
                         password varchar NOT NULL
 );
 
-INSERT INTO Person (username, birth_year, password) VALUES ('user1', 2000, 'password1');
-INSERT INTO Person (username, birth_year, password) VALUES ('user2', 1990, 'password2');
-INSERT INTO Person (username, birth_year, password) VALUES ('user3', 1995, '{noop}password3');
+-- INSERT INTO Person (username, birth_year, password) VALUES ('user1', 2000, 'password1');
+-- INSERT INTO Person (username, birth_year, password) VALUES ('user2', 1990, 'password2');
+-- INSERT INTO Person (username, birth_year, password) VALUES ('user3', 1995, 'password3');
+
+ALTER TABLE Person ADD COLUMN role varchar(100) NOT NULL;
+

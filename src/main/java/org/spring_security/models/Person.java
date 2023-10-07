@@ -26,6 +26,9 @@ public class Person {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "role")
+    private String role;
+
     public Person() {
     }
 
@@ -74,5 +77,13 @@ public class Person {
                 ", birthYear=" + birthYear +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
